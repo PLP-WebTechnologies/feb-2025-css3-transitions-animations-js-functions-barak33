@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin: 20px auto;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+#box:hover {
+    transform: scale(1.2);
+}
+
+.animated-box.active {
+    animation: bounce 0.8s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
